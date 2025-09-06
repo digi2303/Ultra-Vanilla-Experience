@@ -1,5 +1,6 @@
 package com.digi.uve;
 
+import com.digi.uve.item.ModItemGroups;
 import com.digi.uve.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +13,7 @@ public class UltraVanillaExperience implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
 	}
 }
